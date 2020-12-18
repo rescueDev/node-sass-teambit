@@ -3,20 +3,21 @@ footer {
   width: 100%;
   #cont-cards {
     @include simple-flex;
-
+    justify-content: space-between;
     width: 100%;
     min-height: 400px;
-    border: 1px solid black;
+    //border: 1px solid black;
 
     #left-card {
+      padding: 5px 0;
       width: 30%;
       min-height: 60px;
-      border: 1px solid black;
+      //border: 1px solid black;
       @include simple-flex;
       justify-content: space-between;
 
       #logo-small {
-        width: 30%;
+        // width: 30%;
         height: 50px;
         img {
           width: 100%;
@@ -24,19 +25,24 @@ footer {
         }
       }
       #text-logo {
-        width: 75%;
+        width: 80%;
       }
     }
     #right-card {
-      width: 70%;
+      width: 68%;
       min-height: 400px;
-      border: 1px solid black;
+      //border: 1px solid black;
       @include simple-flex;
 
       .cards {
+        padding: 5px;
         width: 30%;
         min-height: 300px;
-        border: black 1px solid;
+        //border: black 1px solid;
+        li {
+          margin-bottom: $mgtxtBot;
+          margin-top: $mgtxtTop;
+        }
       }
     }
   }
