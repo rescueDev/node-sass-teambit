@@ -5,6 +5,10 @@
   padding: 0;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 @mixin simple-flex {
   display: flex;
 }
@@ -23,12 +27,11 @@
 
 @mixin flex-start {
   display: flex;
-  justify-content: start;
+  flex-direction: row;
 }
 
 @mixin flex-end {
   display: flex;
-  justify-content: end;
   flex-direction: row-reverse;
 }
 
@@ -36,6 +39,7 @@
 @mixin titleSect {
   font-size: 22px;
   color: #58402c;
+  line-height: 35px;
 }
 
 /*intestazioni sezioni*/
@@ -45,4 +49,8 @@
 
 li {
   list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
