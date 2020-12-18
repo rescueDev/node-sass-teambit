@@ -38,7 +38,7 @@ body {
 /*titoli sezioni ripetuti*/
 @mixin titleSect {
   font-size: 22px;
-  color: #58402c;
+  color: $colText;
   line-height: 35px;
 }
 

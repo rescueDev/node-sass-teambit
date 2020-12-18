@@ -1,6 +1,8 @@
 /*variabile colore sez bianca e sez rosa*/
 
-/*margini variabili*/
+/*margini variabili testo*/
+
+/*margini tra blocchi*/
 
 /* Regole generali */
 
@@ -71,11 +73,17 @@ header nav #logo-nav {
   width: 20%;
 }
 
+header nav #logo-nav img {
+  max-width: 100%;
+  height: 60px;
+}
+
 header nav ul {
   width: 40%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  color: #0e14ee;
 }
 
 #jumbotron #jumbo-cont {
@@ -106,7 +114,7 @@ header nav ul {
 }
 
 #central-sez {
-  background-color: #ffe7d2;
+  background-color: #7f14d4;
   min-height: 1200px;
 }
 
@@ -125,7 +133,7 @@ header nav ul {
 
 #central-sez #before-teambit .up-sect h3 {
   font-size: 22px;
-  color: #58402c;
+  color: #040f0f;
   line-height: 35px;
 }
 
@@ -139,6 +147,7 @@ header nav ul {
 #central-sez #before-teambit .down-sect .sticker {
   width: 30%;
   min-height: 200px;
+  color: #0e14ee;
   text-align: center;
   margin: 20px 10px;
 }
@@ -177,7 +186,7 @@ header nav ul {
 
 #central-sez #after-teambit .up-sect h3 {
   font-size: 22px;
-  color: #58402c;
+  color: #040f0f;
   line-height: 35px;
 }
 
@@ -191,6 +200,7 @@ header nav ul {
 #central-sez #after-teambit .down-sect .sticker {
   width: 30%;
   min-height: 200px;
+  color: #0e14ee;
   text-align: center;
   margin: 20px 10px;
 }
@@ -212,7 +222,7 @@ header nav ul {
 
 #central-sez #after-teambit #final-text {
   font-size: 22px;
-  color: #58402c;
+  color: #040f0f;
   line-height: 35px;
   margin: 80px 0;
   text-align: center;
@@ -242,42 +252,46 @@ a {
   text-decoration: none;
 }
 
-.sez-sx {
+.macro-features {
+  background-color: #ffffff;
+}
+
+.macro-features .sez-sx {
   display: flex;
   flex-direction: row;
   padding: 60px;
   min-height: 400px;
 }
 
-.sez-sx .sx {
+.macro-features .sez-sx .sx {
   display: flex;
   width: 100%;
   min-height: 400px;
 }
 
-.sez-sx .sx .left-img {
+.macro-features .sez-sx .sx .left-img {
   width: 60%;
 }
 
-.sez-sx .sx .left-img img {
+.macro-features .sez-sx .sx .left-img img {
   max-width: 100%;
   height: 100%;
 }
 
-.sez-sx .sx .right-text {
+.macro-features .sez-sx .sx .right-text {
   font-size: 22px;
-  color: #58402c;
+  color: #040f0f;
   line-height: 35px;
   padding: 10px;
   width: 40%;
   position: relative;
 }
 
-.sez-sx .sx .right-text h3 {
+.macro-features .sez-sx .sx .right-text h3 {
   margin-bottom: 10px;
 }
 
-.sez-sx .sx .right-text .undertext-img {
+.macro-features .sez-sx .sx .right-text .undertext-img {
   position: absolute;
   bottom: 0px;
   right: 0%;
@@ -286,47 +300,47 @@ a {
   width: 60%;
 }
 
-.sez-sx .sx .right-text .undertext-img img {
+.macro-features .sez-sx .sx .right-text .undertext-img img {
   max-width: 100%;
 }
 
-.sez-dx {
+.macro-features .sez-dx {
   display: flex;
   flex-direction: row-reverse;
   padding: 60px;
   min-height: 400px;
 }
 
-.sez-dx .dx {
+.macro-features .sez-dx .dx {
   display: flex;
   flex-direction: row-reverse;
   width: 100%;
   min-height: 400px;
 }
 
-.sez-dx .dx .right-img {
+.macro-features .sez-dx .dx .right-img {
   width: 60%;
 }
 
-.sez-dx .dx .right-img img {
+.macro-features .sez-dx .dx .right-img img {
   max-width: 100%;
   height: 100%;
 }
 
-.sez-dx .dx .left-text {
+.macro-features .sez-dx .dx .left-text {
   font-size: 22px;
-  color: #58402c;
+  color: #040f0f;
   line-height: 35px;
   padding: 10px;
   width: 40%;
   position: relative;
 }
 
-.sez-dx .dx .left-text h3 {
+.macro-features .sez-dx .dx .left-text h3 {
   margin-bottom: 10px;
 }
 
-.sez-dx .dx .left-text .undertext-img {
+.macro-features .sez-dx .dx .left-text .undertext-img {
   position: absolute;
   bottom: 0px;
   right: 0%;
@@ -335,7 +349,37 @@ a {
   width: 60%;
 }
 
-.sez-dx .dx .left-text .undertext-img img {
+.macro-features .sez-dx .dx .left-text .undertext-img img {
   max-width: 100%;
+}
+
+#testimonianze {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 600px;
+  background-color: #4466d4;
+}
+
+#testimonianze .test-cont {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+#testimonianze #textarea {
+  margin-top: 30px;
+  padding: 15px;
+  min-height: 400px;
+  border: 1px solid black;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 1px solid #7f14d4;
+  text-align: left;
+}
+
+#testimonianze #textarea p {
+  margin-bottom: 10px;
 }
 
