@@ -12586,6 +12586,18 @@ __webpack_require__.r(__webpack_exports__);
 var app = new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
   el: "#container",
   data: {
+    nav: [{
+      name: "Solutions",
+      dropdown: []
+    }, {
+      name: "Pricing"
+    }, {
+      name: "Blog"
+    }, {
+      name: "Sign in"
+    }, {
+      name: "Sign up"
+    }],
     footer: [{
       name: "Product",
       links: ["Feedback", "Surveys", "Reviews", "Praise", "Slack Integration", "Schedule a demo", "Pricing"]

@@ -21,13 +21,11 @@
             <div id="logo-nav">
               <img src="../img/logo teambit.png" alt="" />
             </div>
-            <ul id="nav-voci">
-              <li>Solutions</li>
-              <li>Pricing</li>
-              <li>Blog</li>
-              <li>Sign in</li>
-              <li><button>Sign up</button></li>
-            </ul>
+            <div v-for="voci in nav" class="nav-voci">
+              <ul>
+                <li><a href=""> {{voci.name}} </a></li>
+              </ul>
+            </div>
           </nav>
           <hr />
         </div>
@@ -117,7 +115,7 @@
               </div>
             </div>
             <div id="final-text">
-              <h5>Here is how it works</h5>
+              <h3>Here is how it works</h3>
             </div>
           </section>
         </div>

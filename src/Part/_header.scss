@@ -12,16 +12,25 @@ header {
     height: 60px;
 
     #logo-nav {
-      width: 20%;
+      width: 45%;
       img {
         max-width: 100%;
         height: 40px;
       }
     }
-    ul {
-      width: 40%;
+    .nav-voci {
       @include flex-subsect;
+      justify-content: space-between;
       color: $colTextSmall;
+
+      &:last-child li {
+        border: 1px solid blue;
+        @include button;
+      }
     }
+  }
+  hr {
+    color: $bgPink;
+    margin-top: $mgtxtTop;
   }
 }

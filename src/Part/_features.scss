@@ -23,13 +23,16 @@
         }
       }
       .right-text {
-        @include titleSect;
         padding: 10px;
         width: 40%;
         position: relative;
-
         h3 {
+          @include text-features;
           margin-bottom: $mgtxtBot;
+        }
+
+        h5 {
+          @include text-features-small;
         }
 
         .undertext-img {
@@ -68,13 +71,18 @@
         }
       }
       .left-text {
-        @include titleSect;
+        @include text-features;
         padding: 10px;
         width: 40%;
         position: relative;
 
         h3 {
+          @include text-features;
           margin-bottom: $mgtxtBot;
+        }
+
+        h5 {
+          @include text-features-small;
         }
 
         .undertext-img {

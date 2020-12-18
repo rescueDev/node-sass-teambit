@@ -3,6 +3,24 @@ import Vue from "vue";
 var app = new Vue({
   el: "#container",
   data: {
+    nav: [
+      {
+        name: "Solutions",
+        dropdown: [],
+      },
+      {
+        name: "Pricing",
+      },
+      {
+        name: "Blog",
+      },
+      {
+        name: "Sign in",
+      },
+      {
+        name: "Sign up",
+      },
+    ],
     footer: [
       {
         name: "Product",
