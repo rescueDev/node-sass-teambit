@@ -21,6 +21,17 @@
   justify-content: space-between;
 }
 
+@mixin flex-start {
+  display: flex;
+  justify-content: start;
+}
+
+@mixin flex-end {
+  display: flex;
+  justify-content: end;
+  flex-direction: row-reverse;
+}
+
 /*titoli sezioni ripetuti*/
 @mixin titleSect {
   font-size: 22px;

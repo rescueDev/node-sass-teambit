@@ -31,6 +31,19 @@ li {
   margin: 60px auto;
 }
 
+.centratura-sx {
+  width: 70%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.centratura-dx {
+  width: 70%;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row-reverse;
+}
+
 header {
   background-color: #ffffff;
   width: 100%;
@@ -190,5 +203,50 @@ header nav ul {
   color: #58402c;
   margin: 80px 0;
   text-align: center;
+}
+
+/* Regole generali */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*titoli sezioni ripetuti*/
+
+/*intestazioni sezioni*/
+
+li {
+  list-style: none;
+}
+
+.sez-sx {
+  display: flex;
+  justify-content: start;
+  min-height: 300px;
+  border: 1px solid black;
+}
+
+.sez-sx .sx {
+  width: 100%;
+  border: 1px solid black;
+  min-height: 300px;
+  background-color: coral;
+}
+
+.sez-dx {
+  display: flex;
+  justify-content: end;
+  flex-direction: row-reverse;
+  min-height: 300px;
+  border: 1px solid black;
+}
+
+.sez-dx .dx {
+  width: 100%;
+  border: 1px solid black;
+  min-height: 300px;
+  background-color: aqua;
 }
 

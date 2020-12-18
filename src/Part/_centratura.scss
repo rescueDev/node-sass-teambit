@@ -12,3 +12,16 @@
   width: 60%;
   margin: 60px auto;
 }
+
+.centratura-sx {
+  width: 70%;
+  @include simple-flex;
+  justify-content: flex-start;
+}
+
+.centratura-dx {
+  width: 70%;
+  @include simple-flex;
+  justify-content: flex-end;
+  flex-direction: row-reverse;
+}

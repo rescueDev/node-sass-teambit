@@ -1,0 +1,24 @@
+@import "Part/common";
+.sez-sx {
+  @include flex-start;
+  min-height: 300px;
+  border: 1px solid black;
+  .sx {
+    width: 100%;
+    border: 1px solid black;
+    min-height: 300px;
+    background-color: coral;
+  }
+}
+
+.sez-dx {
+  @include flex-end;
+  min-height: 300px;
+  border: 1px solid black;
+  .dx {
+    width: 100%;
+    border: 1px solid black;
+    min-height: 300px;
+    background-color: aqua;
+  }
+}
