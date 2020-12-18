@@ -8,9 +8,18 @@
     width: 70%;
     margin: auto;
     text-align: center;
+
+    #intest-test {
+      h2 {
+        font-size: 32px;
+      }
+    }
   }
 
   #textarea {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: $mgblocTop;
     padding: 15px;
     min-height: 400px;
@@ -21,7 +30,29 @@
     text-align: left;
 
     p {
-      margin-bottom: $mgtxtBot;
+      margin-bottom: $mgtxtCreditBot;
+      color: $bgPink;
+    }
+    #credits {
+      width: 45%;
+      @include simple-flex;
+      justify-content: space-between;
+      height: 40px;
+
+      #author {
+        height: 40px;
+        p {
+          font-size: $fontSmall;
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+  #sign-credit {
+    @include flex-sect;
+    margin-top: $mgblocTop;
+    button {
+      margin: $mgtxtCreditBot;
     }
   }
 }

@@ -2,7 +2,11 @@
 
 /*margini variabili testo*/
 
+/*margini variabili testo*/
+
 /*margini tra blocchi*/
+
+/*font size small*/
 
 /* Regole generali */
 
@@ -147,7 +151,7 @@ header nav ul {
 #central-sez #before-teambit .down-sect .sticker {
   width: 30%;
   min-height: 200px;
-  color: #0e14ee;
+  color: #ffffff;
   text-align: center;
   margin: 20px 10px;
 }
@@ -200,7 +204,7 @@ header nav ul {
 #central-sez #after-teambit .down-sect .sticker {
   width: 30%;
   min-height: 200px;
-  color: #0e14ee;
+  color: #ffffff;
   text-align: center;
   margin: 20px 10px;
 }
@@ -353,6 +357,19 @@ a {
   max-width: 100%;
 }
 
+.macro-features .sez-dx .dx .left-text .last-img {
+  position: absolute;
+  bottom: 80px;
+  right: 0%;
+  transform: translate(-50%, 50%);
+  margin: 40px 0;
+  width: 60%;
+}
+
+.macro-features .sez-dx .dx .left-text .last-img img {
+  max-width: 100%;
+}
+
 #testimonianze {
   display: flex;
   align-items: center;
@@ -368,7 +385,14 @@ a {
   text-align: center;
 }
 
+#testimonianze .test-cont #intest-test h2 {
+  font-size: 32px;
+}
+
 #testimonianze #textarea {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 30px;
   padding: 15px;
   min-height: 400px;
@@ -380,6 +404,34 @@ a {
 }
 
 #testimonianze #textarea p {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  color: #7f14d4;
+}
+
+#testimonianze #textarea #credits {
+  width: 45%;
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+}
+
+#testimonianze #textarea #credits #author {
+  height: 40px;
+}
+
+#testimonianze #textarea #credits #author p {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+#testimonianze #sign-credit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+#testimonianze #sign-credit button {
+  margin: 20px;
 }
 

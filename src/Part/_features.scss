@@ -88,6 +88,17 @@
             max-width: 100%;
           }
         }
+        .last-img {
+          position: absolute;
+          bottom: 80px;
+          right: 0%;
+          transform: translate(-50%, 50%);
+          margin: 40px 0;
+          width: 60%;
+          img {
+            max-width: 100%;
+          }
+        }
       }
     }
   }
