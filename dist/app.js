@@ -12583,6 +12583,27 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_0__);
 
+var app = new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
+  el: "#container",
+  data: {
+    footer: [{
+      name: "Product",
+      links: ["Feedback", "Surveys", "Reviews", "Praise", "Slack Integration", "Schedule a demo", "Pricing"]
+    }, {
+      name: "About",
+      links: ["About", "Terms and privacy", "Help Center", "Blog", "Digest"]
+    }, {
+      name: "Connect",
+      links: ["Contact us", "Twitter", "Facebook", "Linkedin"]
+    }, {
+      name: "Labs",
+      links: ["Manager checklist", "Manager assessment", "Manager handbook"]
+    }, {
+      name: "From the blog",
+      links: ["How to change your company culture: a four-step framework", "How teams can be more productive by killing 8-hour workday", "How to build high performing teams inspired by nature", "View all"]
+    }]
+  }
+});
 
 /***/ }),
 

@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="app.css" />
   </head>
   <body>
-    <div class="container">
+    <div id="container">
       <!-- Header con navbar -->
       <header>
         <!-- centratura di sezione -->
@@ -269,13 +269,30 @@
       <footer>
         <section class="centratura1">
           <main id="cont-cards">
-            <div id="left-card"></div>
+            <div id="left-card">
+              <div id="logo-small">
+                <img src="../img/logo-small.svg" alt="" />
+              </div>
+              <div id="text-logo">
+                <h5>
+                  <a href="">Teambit</a> helps teams create high performing
+                  cultures by making feedback a daily habit.
+                </h5>
+              </div>
+            </div>
             <div id="right-card">
-              <div class="cards"></div>
-              <div class="cards"></div>
-              <div class="cards"></div>
-              <div class="cards"></div>
-              <div class="cards"></div>
+              <div class="cards" v-for="voci in footer">
+                <h4>{{voci.name}}</h4>
+                <ul>
+                  <li v-for="link in voci.links">
+                    <a href=""> {{link}} </a>
+                  </li>
+                </ul>
+              </div>
+              <!-- <div class="cards"></div> -->
+              <!-- <div class="cards"></div> -->
+              <!-- <div class="cards"></div> -->
+              <!-- <div class="cards"></div> -->
             </div>
           </main>
         </section>
