@@ -8,13 +8,27 @@
   padding: 0;
 }
 
+/*titoli sezioni ripetuti*/
+
+/*intestazioni sezioni*/
+
 li {
   list-style: none;
 }
 
 .centratura-header {
   width: 70%;
-  margin: 0 auto;
+  margin: 60px auto;
+}
+
+.centratura1 {
+  width: 70%;
+  margin: 60px auto;
+}
+
+.centratura2 {
+  width: 60%;
+  margin: 60px auto;
 }
 
 header {
@@ -39,5 +53,142 @@ header nav ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+#jumbotron #jumbo-cont {
+  display: flex;
+  width: 100%;
+  border: 1px solid black;
+  min-height: 400px;
+}
+
+#jumbotron #jumbo-cont #j-left {
+  width: 50%;
+  border: 1px solid black;
+  height: 400px;
+}
+
+#jumbotron #jumbo-cont #j-left h1 {
+  font-size: 45px;
+}
+
+#jumbotron #jumbo-cont #j-left #sign-jumbo {
+  display: flex;
+}
+
+#jumbotron #jumbo-cont #j-right {
+  width: 50%;
+  border: 1px solid black;
+  height: 400px;
+}
+
+#central-sez {
+  background-color: #ffe7d2;
+  min-height: 1200px;
+}
+
+#central-sez #before-teambit {
+  width: 100%;
+  padding: 40px 0;
+  min-height: 600px;
+}
+
+#central-sez #before-teambit .up-sect {
+  width: 70%;
+  margin: 60px auto;
+  text-align: center;
+  /*debug*/
+}
+
+#central-sez #before-teambit .up-sect h3 {
+  font-size: 22px;
+  color: #58402c;
+}
+
+#central-sez #before-teambit .down-sect {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#central-sez #before-teambit .down-sect .sticker {
+  width: 30%;
+  min-height: 200px;
+  text-align: center;
+  margin: 20px 10px;
+}
+
+#central-sez #before-teambit .down-sect .sticker img {
+  width: 45%;
+  height: 100px;
+}
+
+#central-sez #before-teambit .down-sect .sticker:last-child img {
+  width: 80%;
+  height: 280px;
+}
+
+#central-sez #before-teambit .down-sect .sticker h5 {
+  width: 60%;
+  margin: 10px auto;
+}
+
+#central-sez hr {
+  margin: 50px 0;
+}
+
+#central-sez #after-teambit {
+  width: 100%;
+  padding: 40px 0;
+  min-height: 600px;
+}
+
+#central-sez #after-teambit .up-sect {
+  width: 70%;
+  margin: 60px auto;
+  text-align: center;
+  /*debug*/
+}
+
+#central-sez #after-teambit .up-sect h3 {
+  font-size: 22px;
+  color: #58402c;
+}
+
+#central-sez #after-teambit .down-sect {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#central-sez #after-teambit .down-sect .sticker {
+  width: 30%;
+  min-height: 200px;
+  text-align: center;
+  margin: 20px 10px;
+}
+
+#central-sez #after-teambit .down-sect .sticker img {
+  width: 45%;
+  height: 100px;
+}
+
+#central-sez #after-teambit .down-sect .sticker:last-child img {
+  width: 80%;
+  height: 280px;
+}
+
+#central-sez #after-teambit .down-sect .sticker h5 {
+  width: 60%;
+  margin: 10px auto;
+}
+
+#central-sez #after-teambit #final-text {
+  font-size: 22px;
+  color: #58402c;
+  margin: 80px 0;
+  text-align: center;
 }
 

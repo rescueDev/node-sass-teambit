@@ -5,6 +5,10 @@
   padding: 0;
 }
 
+@mixin simple-flex {
+  display: flex;
+}
+
 @mixin flex-sect {
   display: flex;
   align-items: center;
@@ -16,6 +20,17 @@
   align-items: center;
   justify-content: space-between;
 }
+
+/*titoli sezioni ripetuti*/
+@mixin titleSect {
+  font-size: 22px;
+  color: #58402c;
+}
+
+/*intestazioni sezioni*/
+// @mixin int-sez {
+//     font-size: ;
+// }
 
 li {
   list-style: none;

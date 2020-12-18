@@ -1,0 +1,96 @@
+#central-sez {
+  background-color: $bgPink;
+  min-height: 1200px;
+  #before-teambit {
+    width: 100%;
+    padding: 40px 0;
+    //border: 1px solid black;
+    min-height: 600px;
+
+    .up-sect {
+      width: 70%;
+      margin: 60px auto;
+      text-align: center;
+      /*debug*/
+      //border: 1px solid black;
+      h3 {
+        @include titleSect;
+      }
+    }
+    .down-sect {
+      @include flex-sect;
+      flex-wrap: wrap;
+      // border: 1px solid black;
+
+      .sticker {
+        width: 30%;
+        min-height: 200px;
+        // border: 1px solid black;
+        text-align: center;
+        margin: 20px 10px;
+        img {
+          width: 45%;
+          height: 100px;
+        }
+        &:last-child img {
+          width: 80%;
+          height: 280px;
+        }
+        h5 {
+          width: 60%;
+          margin: 10px auto;
+        }
+      }
+    }
+  }
+  hr {
+    margin: 50px 0;
+  }
+  #after-teambit {
+    width: 100%;
+    padding: 40px 0;
+    //border: 1px solid black;
+    min-height: 600px;
+
+    .up-sect {
+      width: 70%;
+      margin: 60px auto;
+      text-align: center;
+      /*debug*/
+      //border: 1px solid black;
+      h3 {
+        @include titleSect;
+      }
+    }
+    .down-sect {
+      @include flex-sect;
+      flex-wrap: wrap;
+      // border: 1px solid black;
+
+      .sticker {
+        width: 30%;
+        min-height: 200px;
+        // border: 1px solid black;
+        text-align: center;
+        margin: 20px 10px;
+        img {
+          width: 45%;
+          height: 100px;
+        }
+        &:last-child img {
+          width: 80%;
+          height: 280px;
+        }
+        h5 {
+          width: 60%;
+          margin: 10px auto;
+        }
+      }
+    }
+    #final-text {
+      @include titleSect;
+      margin: 80px 0;
+      text-align: center;
+    }
+  }
+}
