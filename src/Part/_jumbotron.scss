@@ -1,28 +1,47 @@
 #jumbotron {
   #jumbo-cont {
     @include simple-flex;
+    justify-content: space-between;
     width: 100%;
-    border: 1px solid black;
-    min-height: 400px;
+    // border: 1px solid black;
+    min-height: 500px;
 
     #j-left {
-      width: 50%;
-      border: 1px solid black;
+      width: 45%;
+      //border: 1px solid black;
       height: 400px;
 
       h1 {
         font-size: 45px;
+        color: $bgTest;
+        margin-top: $mgblocTop;
+        margin-bottom: $mgblocBot;
+      }
+
+      h3 {
+        color: $bgPink;
       }
 
       #sign-jumbo {
         @include simple-flex;
+
+        margin-top: $mgblocTop;
+        button,
+        p {
+          margin-right: $mgtxtRight;
+          margin-bottom: $mgtxtBot;
+        }
       }
     }
 
     #j-right {
       width: 50%;
-      border: 1px solid black;
+      //border: 1px solid black;
       height: 400px;
+
+      img {
+        max-width: 100%;
+      }
     }
   }
 }

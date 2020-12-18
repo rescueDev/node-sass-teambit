@@ -92,29 +92,45 @@ header nav ul {
 
 #jumbotron #jumbo-cont {
   display: flex;
+  justify-content: space-between;
   width: 100%;
-  border: 1px solid black;
-  min-height: 400px;
+  min-height: 500px;
 }
 
 #jumbotron #jumbo-cont #j-left {
-  width: 50%;
-  border: 1px solid black;
+  width: 45%;
   height: 400px;
 }
 
 #jumbotron #jumbo-cont #j-left h1 {
   font-size: 45px;
+  color: #4466d4;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#jumbotron #jumbo-cont #j-left h3 {
+  color: #7f14d4;
 }
 
 #jumbotron #jumbo-cont #j-left #sign-jumbo {
   display: flex;
+  margin-top: 30px;
+}
+
+#jumbotron #jumbo-cont #j-left #sign-jumbo button,
+#jumbotron #jumbo-cont #j-left #sign-jumbo p {
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 #jumbotron #jumbo-cont #j-right {
   width: 50%;
-  border: 1px solid black;
   height: 400px;
+}
+
+#jumbotron #jumbo-cont #j-right img {
+  max-width: 100%;
 }
 
 #central-sez {
