@@ -27,14 +27,31 @@
             <div id="logo-nav">
               <img src="../img/logo teambit.png" alt="" />
             </div>
-            <div v-for="voci in nav" class="nav-voci">
-              <ul>
-                <li>
+            <!-- contenitore parte dx nav -->
+            <aside id="nav-dx">
+              <!-- voci navbar -->
+              <div
+                @mouseenter="hoverDrop(voci, index)"
+                @mouseleave="outDrop(voci,index)"
+                v-for="(voci, index) in nav"
+                class="nav-voci"
+              >
+                <h5>
                   <i v-if="voci.name === 'Sign up'" class="fab fa-google"></i
                   ><a href=""> {{voci.name}} </a>
-                </li>
-              </ul>
-            </div>
+                </h5>
+                <!-- dropdown della prima voce -->
+                <ul
+                  id="dropdown"
+                  v-if="voci.name === 'Solutions'"
+                  v-show="indexSelected === index"
+                >
+                  <li v-for="drop in voci.dropdown">
+                    <a href="">{{drop}}</a>
+                  </li>
+                </ul>
+              </div>
+            </aside>
           </nav>
         </div>
       </header>
@@ -286,10 +303,10 @@
                 <img src="../img/logo-small.svg" alt="" />
               </div>
               <div id="text-logo">
-                <h5>
+                <p>
                   <a href="">Teambit</a> helps teams create high performing
                   cultures by making feedback a daily habit.
-                </h5>
+                </p>
               </div>
             </div>
             <div id="right-card">

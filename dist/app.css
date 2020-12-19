@@ -289,6 +289,7 @@ header nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 60px;
   background-color: #ffffff;
 }
 
@@ -301,27 +302,47 @@ header nav #logo-nav img {
   height: 40px;
 }
 
-header nav .nav-voci {
+header nav #nav-dx {
+  width: 60%;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  justify-content: space-between;
-  color: #0e14ee;
+  align-items: baseline;
 }
 
-header nav .nav-voci:last-child li {
+header nav #nav-dx .nav-voci {
+  color: #0e14ee;
+  height: 25px;
+  padding: 5px 0;
+}
+
+header nav #nav-dx .nav-voci h5 {
+  padding: 0 20px;
+}
+
+header nav #nav-dx .nav-voci:last-child h5 {
   border: 1px solid #0e14ee;
   border-radius: 10px;
   padding: 5px;
 }
 
-header nav .nav-voci:last-child li:hover {
+header nav #nav-dx .nav-voci:last-child h5:hover {
   background-color: #4466d4;
   color: #ffffff;
 }
 
-header nav .nav-voci:last-child li:hover a {
+header nav #nav-dx .nav-voci:last-child h5:hover a {
   color: #ffffff;
+}
+
+header nav #nav-dx .nav-voci #dropdown {
+  padding-top: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #e2e9f0;
+}
+
+header nav #nav-dx .nav-voci #dropdown li {
+  padding: 10px;
 }
 
 header hr {
@@ -344,7 +365,7 @@ header hr {
 }
 
 #jumbotron #jumbo-cont #j-left {
-  width: 45%;
+  width: 40%;
 }
 
 #jumbotron #jumbo-cont #j-left h1 {
@@ -352,6 +373,7 @@ header hr {
   color: #4466d4;
   margin-top: 30px;
   margin-bottom: 30px;
+  line-height: 70px;
 }
 
 #jumbotron #jumbo-cont #j-left h3 {
@@ -373,7 +395,7 @@ header hr {
 #jumbotron #jumbo-cont #j-left #sign-jumbo button {
   border-radius: 5px;
   border: none;
-  padding: 5px;
+  padding: 10px;
   background-color: #7f14d4;
   color: #ffffff;
 }
@@ -741,7 +763,7 @@ a {
 #testimonianze #sign-credit button {
   border-radius: 5px;
   border: none;
-  padding: 5px;
+  padding: 10px;
   background-color: #7f14d4;
   color: #ffffff;
   margin: 20px;

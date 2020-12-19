@@ -12586,9 +12586,10 @@ __webpack_require__.r(__webpack_exports__);
 var app = new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
   el: "#container",
   data: {
+    indexSelected: "",
     nav: [{
       name: "Solutions",
-      dropdown: []
+      dropdown: ["Feedback", "Surveys", "Reviews", "Praise"]
     }, {
       name: "Pricing"
     }, {
@@ -12614,6 +12615,14 @@ var app = new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
       name: "From the blog",
       links: ["How to change your company culture: a four-step framework", "How teams can be more productive by killing 8-hour workday", "How to build high performing teams inspired by nature", "View all"]
     }]
+  },
+  methods: {
+    hoverDrop: function hoverDrop(voce, index) {
+      this.indexSelected = index;
+    },
+    outDrop: function outDrop(voce, index) {
+      this.indexSelected = "";
+    }
   }
 });
 

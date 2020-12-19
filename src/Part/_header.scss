@@ -11,8 +11,9 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    //height: 60px;
+    height: 60px;
     background-color: $bgWhite;
+    //border: 1px solid black;
 
     #logo-nav {
       width: 45%;
@@ -21,20 +22,43 @@ header {
         height: 40px;
       }
     }
-    .nav-voci {
-      @include flex-subsect;
-      justify-content: space-between;
-      color: $colTextSmall;
 
-      &:last-child li {
-        border: 1px solid $colTextSmall;
-        @include button;
-      }
-      &:last-child li:hover {
-        background-color: $bgTest;
-        color: $bgWhite;
-        a {
+    #nav-dx {
+      width: 60%;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+
+      .nav-voci {
+        // @include flex-subsect;
+        // justify-content: space-between;
+        color: $colTextSmall;
+        height: 25px;
+        padding: 5px 0;
+
+        h5 {
+          padding: 0 20px;
+        }
+
+        &:last-child h5 {
+          border: 1px solid $colTextSmall;
+          @include button;
+        }
+        &:last-child h5:hover {
+          background-color: $bgTest;
           color: $bgWhite;
+          a {
+            color: $bgWhite;
+          }
+        }
+        #dropdown {
+          padding-top: 20px;
+          background-color: $bgWhite;
+          border-radius: 10px;
+          border: 1px solid rgb(226, 233, 240);
+          li {
+            padding: 10px;
+          }
         }
       }
     }

@@ -3,10 +3,11 @@ import Vue from "vue";
 var app = new Vue({
   el: "#container",
   data: {
+    indexSelected: "",
     nav: [
       {
         name: "Solutions",
-        dropdown: [],
+        dropdown: ["Feedback", "Surveys", "Reviews", "Praise"],
       },
       {
         name: "Pricing",
@@ -56,5 +57,13 @@ var app = new Vue({
         ],
       },
     ],
+  },
+  methods: {
+    hoverDrop(voce, index) {
+      this.indexSelected = index;
+    },
+    outDrop(voce, index) {
+      this.indexSelected = "";
+    },
   },
 });
