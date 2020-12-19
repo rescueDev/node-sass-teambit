@@ -1,11 +1,12 @@
 #jumbotron {
   @include flex-sect;
+  min-height: calc(100vh - 90px);
   #jumbo-cont {
     @include simple-flex;
     justify-content: space-between;
+    min-height: 300px;
     width: 100%;
     // border: 1px solid black;
-    min-height: 550px;
 
     #j-left {
       width: 45%;
@@ -25,7 +26,7 @@
 
       #sign-jumbo {
         @include simple-flex;
-
+        align-items: center;
         margin-top: $mgblocTop;
         button,
         p {
@@ -35,6 +36,10 @@
         button {
           @include button-purple;
         }
+      }
+
+      p {
+        font-size: $fontSmall;
       }
     }
 

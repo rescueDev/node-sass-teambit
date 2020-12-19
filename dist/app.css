@@ -8,6 +8,214 @@
 
 /*font size small*/
 
+/* Handle box-sizing while better addressing child elements */
+
+html {
+  box-sizing: border-box;
+}
+
+/* Responsive images and other embedded objects */
+
+img,
+object,
+embed {
+  max-width: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* force a vertical scrollbar to prevent a jumpy page */
+
+html {
+  overflow-y: scroll;
+}
+
+pre {
+  white-space: pre;
+  /* CSS2 */
+  white-space: pre-wrap;
+  /* CSS 2.1 */
+  white-space: pre-line;
+  /* CSS 3 (and 2.1 as well, actually) */
+  word-wrap: break-word;
+  /* IE */
+}
+
+/* html5doctor reset */
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colors to suit your needs */
+
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colors to suit your needs */
+
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border color to suit your needs */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
 /* Regole generali */
 
 * {
@@ -54,13 +262,11 @@ a {
 .centratura-sx {
   width: 70%;
   display: flex;
-  justify-content: flex-start;
 }
 
 .centratura-dx {
   width: 70%;
   display: flex;
-  justify-content: flex-end;
   flex-direction: row-reverse;
 }
 
@@ -114,13 +320,14 @@ header hr {
   display: flex;
   align-items: center;
   justify-content: center;
+  min-height: calc(100vh - 90px);
 }
 
 #jumbotron #jumbo-cont {
   display: flex;
   justify-content: space-between;
+  min-height: 300px;
   width: 100%;
-  min-height: 550px;
 }
 
 #jumbotron #jumbo-cont #j-left {
@@ -141,6 +348,7 @@ header hr {
 
 #jumbotron #jumbo-cont #j-left #sign-jumbo {
   display: flex;
+  align-items: center;
   margin-top: 30px;
 }
 
@@ -156,6 +364,10 @@ header hr {
   padding: 5px;
   background-color: #7f14d4;
   color: #ffffff;
+}
+
+#jumbotron #jumbo-cont #j-left p {
+  font-size: 12px;
 }
 
 #jumbotron #jumbo-cont #j-right {
@@ -222,6 +434,7 @@ header hr {
 #central-sez #before-teambit .down-sect .sticker h5 {
   width: 60%;
   margin: 10px auto;
+  font-size: 16px;
 }
 
 #central-sez hr {
@@ -276,6 +489,7 @@ header hr {
 #central-sez #after-teambit .down-sect .sticker h5 {
   width: 60%;
   margin: 10px auto;
+  font-size: 16px;
 }
 
 #central-sez #after-teambit #final-text {
@@ -337,7 +551,6 @@ a {
 
 .macro-features .sez-sx .sx .left-img img {
   max-width: 100%;
-  height: 100%;
 }
 
 .macro-features .sez-sx .sx .right-text {
@@ -366,7 +579,7 @@ a {
 
 .macro-features .sez-sx .sx .right-text .undertext-img {
   position: absolute;
-  bottom: 0px;
+  top: 70px;
   right: 0%;
   transform: translate(-50%, 50%);
   margin: 40px 0;
@@ -397,7 +610,6 @@ a {
 
 .macro-features .sez-dx .dx .right-img img {
   max-width: 100%;
-  height: 100%;
 }
 
 .macro-features .sez-dx .dx .left-text {
@@ -429,7 +641,7 @@ a {
 
 .macro-features .sez-dx .dx .left-text .undertext-img {
   position: absolute;
-  bottom: 0px;
+  top: 70px;
   right: 0%;
   transform: translate(-50%, 50%);
   margin: 40px 0;
@@ -442,7 +654,7 @@ a {
 
 .macro-features .sez-dx .dx .left-text .last-img {
   position: absolute;
-  bottom: 80px;
+  top: 70px;
   right: 0%;
   transform: translate(-50%, 50%);
   margin: 40px 0;
@@ -474,12 +686,11 @@ a {
 }
 
 #testimonianze #textarea {
-  width: 70%;
+  width: 60%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
   padding: 15px;
-  min-height: 400px;
   border: 1px solid black;
   background-color: #7f14d4;
   opacity: 0.8;
@@ -491,6 +702,7 @@ a {
 #testimonianze #textarea p {
   margin-bottom: 20px;
   color: #ffffff;
+  line-height: 20px;
 }
 
 #testimonianze #textarea #credits {
@@ -500,24 +712,43 @@ a {
   height: 40px;
 }
 
+#testimonianze #textarea #credits img {
+  width: 35px;
+  height: 35px;
+}
+
 #testimonianze #textarea #credits #author {
   height: 40px;
 }
 
 #testimonianze #textarea #credits #author p {
   font-size: 12px;
-  margin-bottom: 5px;
+  margin-bottom: 1px;
 }
 
 #testimonianze #sign-credit {
   display: flex;
   align-items: center;
   justify-content: center;
+  align-items: center;
   margin-top: 30px;
 }
 
 #testimonianze #sign-credit button {
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  background-color: #7f14d4;
+  color: #ffffff;
   margin: 20px;
+}
+
+#testimonianze #sign-credit p {
+  color: #ffffff;
+}
+
+#testimonianze p {
+  color: #ffffff;
 }
 
 footer {
