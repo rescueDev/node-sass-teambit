@@ -3,14 +3,16 @@ header {
   background-color: $bgWhite;
   width: 100%;
   height: 60px;
-  margin-top: $mgblocTop;
-  /*debug*/
+  position: sticky;
+  top: 0;
+  z-index: 999;
 
   nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 60px;
+    //height: 60px;
+    background-color: $bgWhite;
 
     #logo-nav {
       width: 45%;
@@ -25,8 +27,15 @@ header {
       color: $colTextSmall;
 
       &:last-child li {
-        border: 1px solid blue;
+        border: 1px solid $colTextSmall;
         @include button;
+      }
+      &:last-child li:hover {
+        background-color: $bgTest;
+        color: $bgWhite;
+        a {
+          color: $bgWhite;
+        }
       }
     }
   }

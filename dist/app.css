@@ -279,15 +279,17 @@ header {
   background-color: #ffffff;
   width: 100%;
   height: 60px;
-  margin-top: 30px;
-  /*debug*/
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
 header nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 60px;
+  background-color: #ffffff;
 }
 
 header nav #logo-nav {
@@ -308,9 +310,18 @@ header nav .nav-voci {
 }
 
 header nav .nav-voci:last-child li {
-  border: 1px solid blue;
+  border: 1px solid #0e14ee;
   border-radius: 10px;
   padding: 5px;
+}
+
+header nav .nav-voci:last-child li:hover {
+  background-color: #4466d4;
+  color: #ffffff;
+}
+
+header nav .nav-voci:last-child li:hover a {
+  color: #ffffff;
 }
 
 header hr {
@@ -815,5 +826,6 @@ footer #cont-cards #right-card .cards li {
 
 footer #cont-cards #right-card .cards li a {
   color: #ffffff;
+  font-size: 16px;
 }
 
