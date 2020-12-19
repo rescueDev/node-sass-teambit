@@ -74,3 +74,11 @@ a {
   border-radius: 10px;
   padding: 5px;
 }
+
+@mixin button-purple {
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  background-color: $bgPink;
+  color: $bgWhite;
+}

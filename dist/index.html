@@ -9,6 +9,12 @@
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="app.css" />
   </head>
   <body>
@@ -23,7 +29,10 @@
             </div>
             <div v-for="voci in nav" class="nav-voci">
               <ul>
-                <li><a href=""> {{voci.name}} </a></li>
+                <li>
+                  <i v-if="voci.name === 'Sign up'" class="fab fa-google"></i
+                  ><a href=""> {{voci.name}} </a>
+                </li>
               </ul>
             </div>
           </nav>
@@ -42,9 +51,11 @@
                 regular feedback.
               </h3>
               <div id="sign-jumbo">
-                <button>Sign up with Google</button>
+                <button>
+                  <i class="fab fa-google"></i>Sign up with Google
+                </button>
                 <p>or</p>
-                <button>Sign up with Slack</button>
+                <button><i class="fab fa-slack"></i>Sign up with Slack</button>
               </div>
               <p>or use your email address</p>
             </aside>

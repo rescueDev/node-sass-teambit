@@ -1,5 +1,6 @@
 #central-sez {
-  background-color: $bgPink;
+  @include flex-sect;
+  background-color: $bgTest;
   min-height: 1200px;
   #before-teambit {
     width: 100%;
@@ -46,6 +47,7 @@
   }
   hr {
     margin: 50px 0;
+    color: $bgPink;
   }
   #after-teambit {
     width: 100%;

@@ -1,4 +1,6 @@
 footer {
+  background-color: $colTextSmall;
+  @include flex-sect;
   min-height: 500px;
   width: 100%;
   #cont-cards {
@@ -42,6 +44,10 @@ footer {
         li {
           margin-bottom: $mgtxtBot;
           margin-top: $mgtxtTop;
+
+          a {
+            color: $bgWhite;
+          }
         }
       }
     }

@@ -1,10 +1,11 @@
 #jumbotron {
+  @include flex-sect;
   #jumbo-cont {
     @include simple-flex;
     justify-content: space-between;
     width: 100%;
     // border: 1px solid black;
-    min-height: 500px;
+    min-height: 550px;
 
     #j-left {
       width: 45%;
@@ -30,6 +31,9 @@
         p {
           margin-right: $mgtxtRight;
           margin-bottom: $mgtxtBot;
+        }
+        button {
+          @include button-purple;
         }
       }
     }

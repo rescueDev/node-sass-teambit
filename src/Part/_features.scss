@@ -35,6 +35,10 @@
           @include text-features-small;
         }
 
+        a {
+          font-size: $fontMed;
+        }
+
         .undertext-img {
           position: absolute;
           bottom: 0px;
@@ -83,6 +87,10 @@
 
         h5 {
           @include text-features-small;
+        }
+
+        a {
+          font-size: $fontMed;
         }
 
         .undertext-img {
