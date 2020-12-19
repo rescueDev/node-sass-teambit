@@ -5,13 +5,13 @@
   .sez-sx {
     @include flex-start;
     padding: 60px;
-    min-height: 400px;
+    //min-height: 400px;
     //border: 1px solid black;
     .sx {
       @include simple-flex;
       width: 100%;
       // border: 1px solid black;
-      min-height: 400px;
+      //min-height: 400px;
       //background-color: coral;
 
       .left-img {
@@ -57,14 +57,14 @@
   .sez-dx {
     @include flex-end;
     padding: 60px;
-    min-height: 400px;
+    //min-height: 400px;
     //border: 1px solid black;
     .dx {
       @include simple-flex;
       flex-direction: row-reverse;
       width: 100%;
       //border: 1px solid black;
-      min-height: 400px;
+      //min-height: 400px;
       //background-color: aqua;
       .right-img {
         width: 60%;
