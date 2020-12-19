@@ -82,10 +82,3 @@ a {
   background-color: $bgPink;
   color: $bgWhite;
 }
-
-@mixin button-hover {
-  button:hover {
-    background-color: $colTextSmall;
-    color: white;
-  }
-}

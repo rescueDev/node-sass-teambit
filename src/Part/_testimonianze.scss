@@ -64,6 +64,9 @@
     button {
       @include button-purple;
       margin: $mgtxtCreditBot;
+      &:hover {
+        cursor: pointer;
+      }
     }
     p {
       color: $bgWhite;

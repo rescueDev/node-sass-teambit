@@ -400,6 +400,10 @@ header hr {
   color: #ffffff;
 }
 
+#jumbotron #jumbo-cont #j-left #sign-jumbo button:hover {
+  cursor: pointer;
+}
+
 #jumbotron #jumbo-cont #j-left p {
   font-size: 12px;
 }
@@ -769,6 +773,10 @@ a {
   margin: 20px;
 }
 
+#testimonianze #sign-credit button:hover {
+  cursor: pointer;
+}
+
 #testimonianze #sign-credit p {
   color: #ffffff;
 }
@@ -830,6 +838,7 @@ footer #cont-cards #right-card .cards {
   padding: 5px;
   width: 30%;
   min-height: 300px;
+  padding: 0 15px;
 }
 
 footer #cont-cards #right-card .cards h4 {

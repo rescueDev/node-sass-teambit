@@ -36,6 +36,9 @@
         }
         button {
           @include button-purple;
+          &:hover {
+            cursor: pointer;
+          }
         }
       }
 
