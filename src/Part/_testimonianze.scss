@@ -1,5 +1,6 @@
 #testimonianze {
   @include flex-sect;
+  padding: 80px 0;
   width: 100%;
   //min-height: 600px;
   background-color: $bgTest;
@@ -34,7 +35,7 @@
     p {
       margin-bottom: $mgtxtCreditBot;
       color: $bgWhite;
-      line-height: 20px;
+      line-height: $lineHp;
     }
     #credits {
       width: 45%;
